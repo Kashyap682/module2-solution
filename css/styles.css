@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Section Styles */
+.section {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px 0; /* Adds vertical gap between each section */
+    background-color: lightblue;
+    position: relative;
+}
+
+/* Section Title Styles */
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    padding: 5px;
+}
+
+/* Background Colors for Titles */
+.chicken-title {
+    background-color: #ffb3b3; /* Pale pink for Chicken */
+}
+
+.beef-title {
+    background-color: #ffcc99; /* Peach color for Beef */
+}
+
+.sushi-title {
+    background-color: #ffb3b3; /* Pale pink for Sushi */
+}
+
+/* Adjust spacing for the paragraphs */
+.section p {
+    margin-top: 10px;
+}
+
+/* Desktop view (992px and above) */
+@media (min-width: 992px) {
+    .section {
+        width: 33.33%; /* Each section takes 1/3 of the width */
+        float: left;
+    }
+}
+
+/* Tablet view (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section {
+        width: 50%; /* First two sections take 50% width */
+        float: left;
+    }
+    
+    #section3 {
+        width: 100%; /* Third section takes full width */
+        clear: both; /* Clear the float */
+    }
+}
+
+/* Mobile view (767px and below) */
+@media (max-width: 767px) {
+    .section {
+        width: 100%; /* Each section takes full width */
+    }
+}
